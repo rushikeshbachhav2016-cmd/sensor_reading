@@ -1,0 +1,24 @@
+name: sensor_hub
+description: "Coalesced, backpressured synthetic sensor stream over a custom binary codec. One package: Dart API + Android native code."
+version: 0.1.0
+publish_to: 'none'
+
+environment:
+  sdk: ^3.12.2
+  flutter: '>=3.3.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  plugin:
+    platforms:
+      android:
+        package: com.example.sensor_hub
+        pluginClass: SensorHubPlugin
